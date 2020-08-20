@@ -36,7 +36,7 @@
   header {
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -57,6 +57,22 @@
     transform: translateX(-50%) translateY(-50%);
   }
   
+  header .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+
   header .container {
     position: relative;
     z-index: 2;
@@ -96,8 +112,7 @@
 }
 
 .fbg { 
-    background-image:url(assets/img/MESJID.png);
-    
+  background-image:url(assets/img/MESJID.png);
 	background-position: right; 
 	background-repeat: no-repeat; 
   background-size: cover; 
@@ -109,30 +124,54 @@
 
 </head>
 
+<nav class="navbar navbar-light fixed-top" style="background-color: #67807c; height: 15%;">
+  <a class="navbar-brand" href="#">
+    <img src="assets/img/bi logo.png" style="width: auto; height: 40px;" class="d-inline-block" alt="">
+  </a>
+</nav>
 <body>
 
 
 <header class="masthead">
   <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" muted="muted" loop="loop" >
+  <img src="assets/img/motif.png" class="banner" style="z-index: 1; background-repeat: repeat-x;" alt="Responsive image">
+  <img src="assets/img/background.jpg" class="img-fluid banner" alt="Responsive image">
+  <!-- <video playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" muted="muted" loop="loop" >
     
     <source src="assets/img/bum.mp4" type="video/mp4">    
-  </video>
+  </video> -->
   <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
-        <h1 class="display-3">KEPRI SYAHFEST 2020</h1>
+        <img src="assets//img/LOGO SYAHFEST 2020.png" class="img-fluid" style="width: 50%; height: 50%;" alt="">
+        <h1 class="display-3">Kepri Syahfest 2020</h1>
         <p class="lead mb-0">Virtual Bazar</p>
       </div>
     </div>
   </div>
+  
+  
 </header>
 
 
 
 
   <main id="main">
-   
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      
+      <div class="card-body">
+        <img src="assets/img/360-degree.png" width="100" height="100" alt="">
+        <h5 class="card-title">Virtual Bazar</h5>
+        <p class="card-text">jelajahi Bazar dengan view 360 derajat menggunakan gawai anda.</p>
+        <a href="#" class="btn btn-dark btn-lg btn-square">Buka Virtual Bazar</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
     <!-- ======= Works Section ======= -->
     <section class="section site-portfolio">
 
@@ -143,12 +182,14 @@
             <h2><b>List Acara</b></h2>
             <p class="mb-0">Syahfest &amp; 2020</p>
           </div>
-          <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12  text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
             <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">Semua</a>
-              <a href="#" data-filter=".programming">Webinar</a>
-              <a href="#" data-filter=".3d">Virtual</a>
-              <a href="#" data-filter=".branding">Pelatihan</a>
+              <a href="#" data-filter=".programming" class="active"><b>Pembukaan</b></a>
+              <a href="#" data-filter=".3d">Perlombaan</a>
+              <a href="#" data-filter=".branding">Virtual Bazar</a>
+              <a href="#" data-filter=".branding">Webinar</a>
+              <a href="#" data-filter=".branding">Tabligh Akbar</a>
+              <a href="#" data-filter=".branding">Penutupan</a>
             </div>
           </div>
         </div>
@@ -159,7 +200,7 @@
                 <h3>3D Artist</h3>
                 <span>Idepin: Playground</span>
               </div>
-              <img class="img-fluid" src="assets/img/webinar.jpg">
+              <img class="img-fluid" src="assets/img/webinar.jpeg">
             </a>
             <div class="card-body text-center">
               <h5 class="card-title"><b>Nama Acara</b></h5>
@@ -175,7 +216,7 @@
                 <h3>3D Artist</h3>
                 <span>Idepin: Rumah Laut</span>
               </div>
-              <img class="img-fluid" src="assets/img/webinar.jpg">
+              <img class="img-fluid" src="assets/img/webinar.jpeg">
               <div class="card-body text-center">
                 <h5 class="card-title"><b>Nama Acara</b></h5>
                 <p class="card-text">Penjelasan Singkat Acara</p>
@@ -191,7 +232,7 @@
                 <h3>3D Artist</h3>
                 <span>Idepin: Redbox Bot</span>
               </div>
-              <img class="img-fluid" src="assets/img/webinar.jpg">
+              <img class="img-fluid" src="assets/img/webinar.jpeg">
               <div class="card-body text-center">
                 <h5 class="card-title"><b>Nama Acara</b></h5>
                 <p class="card-text">Penjelasan Singkat Acara</p>
@@ -207,15 +248,19 @@
   </main><!-- End #main -->
 
    <!-- Contact-->
-   <section class="page-section fbg" id="contact">
-    <div class="container ">
+
+   <section class="page-section pt-4 fbg" style="color: #fff; background-color: #67807c;" id="contact">
+    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-5 text-center">
-                <h2 class="mt-0">KEPRI SYAHFEST 2020</h2>
-                <hr class="divider my-4" />
-                <p class="text-muted mb-5">"Contohlah lebah, jika makan ia hanya memilih yang halal dan tayib, demikian pula jika ia memberi makan keluarganya. Dan bila ia
-                   hinggap diatas sesuatu, tak pernah ia mematahkan atau merusaknya." - Ibn Al Qayyim -
-                </p>
+            <div class="col-lg-8 text-center">
+              <blockquote class="blockquote text-center">
+                <i>
+                <p class="mb-0">"Contohlah lebah, jika makan ia hanya memilih yang halal dan tayib, demikian pula jika ia memberi makan keluarganya. Dan bila ia
+                  hinggap diatas sesuatu, tak pernah ia mematahkan atau merusaknya."</p>
+                </i>
+                <footer class="blockquote-footer" style="color: #fff;">Ibn Al Qayyim</footer>
+              </blockquote>
+
             </div>
         </div>
     </div>
