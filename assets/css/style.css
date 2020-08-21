@@ -500,3 +500,17 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .social a:hover {
   color: #000;
 }
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.2);
+}
