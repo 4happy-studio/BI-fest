@@ -169,16 +169,8 @@ www.4happy-studio.com -->
         </div>
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
           
-          <div class="item 3d col-sm-6 col-md-4 col-lg-4 mb-4">
-            <div class="card">
-              <a href="#" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3></h3>
-                  <p>Klik untuk fullscreen foto</p>
-                </div>
-                <img class="img-fluid" src="assets/img/Narata/narata1.png">
-              </a>
-              <div class="card-body text-center">
+          
+              
               
               
               <?php
@@ -186,6 +178,16 @@ www.4happy-studio.com -->
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_array($result)){
 
+            echo '<div class="item 3d col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div class="card">
+              <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3></h3>
+                  <p>Klik untuk fullscreen foto</p>
+                </div>
+                <img class="img-fluid" src="'.$row['image'].'">';
+            echo '</a>
+            <div class="card-body text-center">';
             echo '<h5 class="card-title"><b>'. $row['name'].'</b></h5>';
             echo '<p class="card-text">'. $row['desc'].'</p>';
             echo '<img class="img-fluid" src="'. $row['image'].'">';
@@ -193,8 +195,9 @@ www.4happy-studio.com -->
             echo '<div class="card-footer">
             <a href="#" class="btn btn-lg btn-block btn-outline-warning btn-square align-items-center">Beli Disini</a>
           </div>';
+          echo '</div>
+          </div>';
         }
-        echo "</table>";
         // Free result set
         mysqli_free_result($result);
     } else{
@@ -211,11 +214,7 @@ www.4happy-studio.com -->
 mysqli_close($link);
 
 ?>
-                 
-             
-              
-            </div>
-          </div>
+            
 
 
           
