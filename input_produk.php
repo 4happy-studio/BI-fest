@@ -36,7 +36,7 @@ $name = mysqli_real_escape_string($link, $_REQUEST['name']);
 $desc = mysqli_real_escape_string($link, $_REQUEST['desc']);
 
 // Attempt insert query execution
-$sql = "INSERT INTO produk (`id`, `id_tenant`, `name`, `desc`, `image`) VALUES ('$id','$id_tenant', '$name', '$desc', '$dirUpload.$namaFile')";
+$sql = "INSERT INTO produk (`id`, `id_tenant`, `name`, `desc`, `image`) VALUES ('$id','$id_tenant', '$name', '$desc', '$dirUpload$namaFile')";
 if(mysqli_query($link, $sql)){
     echo "Records added successfully.";
     header("Location: input.php");
