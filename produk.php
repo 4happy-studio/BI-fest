@@ -207,7 +207,7 @@ www.4happy-studio.com -->
             <div class="card-body text-center">';
             echo '<h5 class="card-title"><b>'. $row['name'].'</b></h5>';
             echo '<p class="card-text">'. $row['desc'].'</p>';
-            echo '<img class="img-fluid" src="'. $row['image'].'">';
+            //echo '<img class="img-fluid" src="'. $row['image'].'">';
             echo '</div>';
             echo '<div class="card-footer">
             <a href="#" class="btn btn-lg btn-block btn-outline-warning btn-square align-items-center">Beli Disini</a>
