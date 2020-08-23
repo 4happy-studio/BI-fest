@@ -1,3 +1,20 @@
+<?php
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+$link = mysqli_connect("bikepriexpo.com:3306", "bikepri_user", "exploit9827", "bikepri_produk");
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+$id = $_GET['id_tenant'];
+// Attempt select query execution
+$sql = "SELECT * FROM produk WHERE id_tenant ='$id'";
+
+ 
+
+?>
 <!-- COPYRIGHT 4HAPPY STUDIO 2020
 Game developer Batam Indonesia
 www.4happy-studio.com -->
@@ -162,17 +179,41 @@ www.4happy-studio.com -->
                 <img class="img-fluid" src="assets/img/Narata/narata1.png">
               </a>
               <div class="card-body text-center">
-                <h5 class="card-title"><b>Narata</b></h5>
-                <p class="card-text">Narata Snack adalah produk makanan ringan yang berasal dari Batam dengan memanfaatkan buah-buahan 
-                  aneka ragam yang buah-buahan yang khas Indonesia. 
-                  Pisang, Nangka & Salak adalaah bahan baku utama yang dipadukan
-                   dengan proses produksi yang mengutamakan higienis dengan
-                    mengusung NARATA SNACK HEALTHY FOOD</p>
-                <img class="img-fluid" src="assets/img/Narata/narata1.png">
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn btn-lg btn-block btn-outline-warning btn-square align-items-center">Beli Disini</a>
-              </div>
+              
+              
+              <?php
+              if($result = mysqli_query($link, $sql)){
+    if(mysqli_num_rows($result) > 0){
+        while($row = mysqli_fetch_array($result)){
+
+            echo '<h5 class="card-title"><b>'. $row['name'].'</b></h5>';
+            echo '<p class="card-text">'. $row['desc'].'</p>';
+            echo '<img class="img-fluid" src="'. $row['image'].'">';
+            echo '</div>';
+            echo '<div class="card-footer">
+            <a href="#" class="btn btn-lg btn-block btn-outline-warning btn-square align-items-center">Beli Disini</a>
+          </div>';
+        }
+        echo "</table>";
+        // Free result set
+        mysqli_free_result($result);
+    } else{
+        echo "No records matching your query were found.";
+    }
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+
+
+    
+}
+
+// Close connection
+mysqli_close($link);
+
+?>
+                 
+             
+              
             </div>
           </div>
 
