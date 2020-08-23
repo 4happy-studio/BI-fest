@@ -31,7 +31,7 @@
 <br>
 
 <h2>INPUT PRODUK</h2>
-<form action="input_produk.php" method="post">
+<form action="input_produk.php" method="post" enctype="multipart/form-data">
     <p>
         <label for="id">ID:</label>
         <input type="text" name="id" id="id">
