@@ -24,6 +24,10 @@
         <label for="cluster">cluster</label>
         <input type="text" name="cluster" id="cluster">
     </p>
+    <p>
+        <label for="cluster">cluster</label>
+        <input type="text" name="cluster" id="cluster">
+    </p>
     <input type="submit" value="Submit">
 </form>
 
@@ -52,6 +56,11 @@
     <p>
         <label for="img">Gambar Produk</label>
         <input type="file" id="img" name="img" accept="image/*">
+    </p>
+
+    <p>
+        <label for="urlproduk">Url Produk</label>
+        <input type="text" name="urlproduk" id="urlproduk">
     </p>
     
     <input type="submit" value="Submit">
