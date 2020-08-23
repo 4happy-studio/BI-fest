@@ -5,7 +5,7 @@ $namaFile = $_FILES['img']['name'];
 $namaSementara = $_FILES['img']['tmp_name'];
 
 // tentukan lokasi file akan dipindahkan
-$dirUpload = "assets/img/produk";
+$dirUpload = "assets/img/produk/";
 
 // pindahkan file
 $terupload = move_uploaded_file($namaSementara, $dirUpload.$namaFile);
