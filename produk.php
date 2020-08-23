@@ -11,6 +11,7 @@ if($link === false){
 $id = $_GET['id_tenant'];
 // Attempt select query execution
 $sql = "SELECT * FROM produk WHERE id_tenant ='$id'";
+$sql_tenant = "SELECT * FROM tenant WHERE id = '$id'";
 
  
 
@@ -163,8 +164,24 @@ www.4happy-studio.com -->
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <h2><b>Info Produk</b></h2>
-            <p class="mb-0">BI Syahfest 2020</p>
+          <?php
+          if($result_tenant = mysqli_query($link, $sql_tenant)){
+            if(mysqli_num_rows($result_tenant) > 0){
+              while($row_tenant = mysqli_fetch_array($result_tenant)){
+                  echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
+                  echo '<p class="mb-0">'.$row_tenant['desc'].'</p>';
+              }
+              // Free result set
+              mysqli_free_result($result);
+            }else{
+              echo "No records matching your query were found.";
+            }
+          }else{
+            echo "ERROR: Could not able to execute $sql_tenant. " . mysqli_error($link);    
+          }
+          ?>
+
+            
           </div>
         </div>
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
