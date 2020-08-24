@@ -2,6 +2,7 @@
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 $link = mysqli_connect("bikepriexpo.com:3306", "bikepri_user", "exploit9827", "bikepri_produk");
+$video = "";
  
 // Check connection
 if($link === false){
@@ -167,37 +168,8 @@ www.4happy-studio.com -->
                 echo '<div class="iframe-container">
                 <div id="player"></div>
               </div>';
-              echo '<script>
-          
-              // 2. This code loads the IFrame Player API code asynchronously.
-     var tag = document.createElement("script");
-   
-   tag.src = "https://www.youtube.com/iframe_api";
-   var firstScriptTag = document.getElementsByTagName("script")[0];
-   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-   
-   // 3. This function creates an <iframe> (and YouTube player)
-   //    after the API code downloads.
-   var player;
-   var str = '.$row_tenant['vid'].';
-   function onYouTubeIframeAPIReady() {
-     player = new YT.Player("player", {
-       width: "100%",
-       videoId: "str.replace("https://www.youtube.com/embed/", "")",
-       playerVars: { "autoplay": 1, "playsinline": 1 },
-       events: {
-         "onReady": onPlayerReady
-       }
-     });
-   }
-   
-   // 4. The API will call this function when the video player is ready.
-   function onPlayerReady(event) {
-      event.target.mute();
-     event.target.playVideo();
-   }
-   
-             </script>';
+                  $video = $row_tenant['vid'];
+                  str_replace('https://www.youtube.com/embed/', '', $video);
                   //echo '<iframe width="560" height="315" src="'.$row_tenant['vid'].'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                   echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
                   echo '<p class="mb-0">'.$row_tenant['desc'].'</p>';
@@ -293,7 +265,36 @@ mysqli_close($link);
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+          // 2. This code loads the IFrame Player API code asynchronously.
+ var tag = document.createElement('script');
 
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+ player = new YT.Player('player', {
+   width: '100%',
+   videoId: '',
+   playerVars: { 'autoplay': 1, 'playsinline': 1 },
+   events: {
+     'onReady': onPlayerReady
+   }
+ });
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.mute();
+ event.target.playVideo();
+}
+
+         </script>
+  </script>
 
   
 
