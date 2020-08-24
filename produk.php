@@ -170,7 +170,7 @@ www.4happy-studio.com -->
           if($result_tenant = mysqli_query($link, $sql_tenant)){
             if(mysqli_num_rows($result_tenant) > 0){
               while($row_tenant = mysqli_fetch_array($result_tenant)){
-                  echo '<div class="embed-responsive embed-responsive-16by9"> 
+                  echo '<div> 
                   <iframe src="'.$row_tenant['vid'].'" frameborder="0" allow="accelerometer" class="embed-responsive-item video-fluid" autoplay encrypted-media gyroscope picture-in-picture allowfullscreen></iframe>
                   </div>';
                   echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
