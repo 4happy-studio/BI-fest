@@ -158,7 +158,9 @@ www.4happy-studio.com -->
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
 
-
+        <div class="align-items-center">
+        
+       
           
           <?php
           if($result_tenant = mysqli_query($link, $sql_tenant)){
@@ -183,7 +185,7 @@ www.4happy-studio.com -->
           }
           ?>
 
-
+          </div>
             
           </div>
         </div>
