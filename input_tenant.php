@@ -13,9 +13,10 @@ $id = mysqli_real_escape_string($link, $_REQUEST['id']);
 $name = mysqli_real_escape_string($link, $_REQUEST['name']);
 $desc = mysqli_real_escape_string($link, $_REQUEST['desc']);
 $cluster = mysqli_real_escape_string($link, $_REQUEST['cluster']);
+$vid = mysqli_real_escape_string($link, $_REQUEST['vid']);
 
 // Attempt insert query execution
-$sql = "INSERT INTO tenant (`id`, `name`, `desc`, `cluster`) VALUES ('$id', '$name', '$desc', '$cluster')";
+$sql = "INSERT INTO tenant (`id`, `name`, `desc`, `cluster`, `vid`) VALUES ('$id', '$name', '$desc', '$cluster', '$vid')";
 if(mysqli_query($link, $sql)){
     echo "Records added successfully.";
     header("Location: input.php");
