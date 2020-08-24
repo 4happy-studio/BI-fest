@@ -156,12 +156,9 @@ www.4happy-studio.com -->
       
       <div class="container">
         <div class="row mb-5 align-items-center">
-          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+          <div class="m-auto col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
 
-        <div class="align-items-center">
-        
-       
-          
+      
           <?php
           if($result_tenant = mysqli_query($link, $sql_tenant)){
             if(mysqli_num_rows($result_tenant) > 0){
@@ -184,8 +181,6 @@ www.4happy-studio.com -->
             echo "ERROR: Could not able to execute $sql_tenant. " . mysqli_error($link);    
           }
           ?>
-
-          </div>
             
           </div>
         </div>
