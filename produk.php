@@ -156,7 +156,7 @@ var autoPlayVideo = document.getElementById("ocScreencapVideo");
   
   <div class="">
    <video playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" muted="muted" loop="loop" >
-    <source src="assets/img/bum.mp4" type="video/mp4">    
+    <source src="https://youtu.be/Jwgf3wmiA04" type="video/mp4">    
   </video> 
   </div>
 </header>
