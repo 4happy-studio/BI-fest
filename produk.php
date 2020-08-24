@@ -291,6 +291,7 @@ function onPlayerReady(event) {
   event.target.mute();
  event.target.playVideo();
  event.target.unMute();
+ event.target.playVideo();
 }
 
          </script>
