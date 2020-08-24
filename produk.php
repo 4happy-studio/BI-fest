@@ -170,6 +170,7 @@ www.4happy-studio.com -->
               </div>';
                   $video = $row_tenant['vid'];
                   str_replace('https://www.youtube.com/embed/', '', $video);
+                  echo $video;
                   //echo '<iframe width="560" height="315" src="'.$row_tenant['vid'].'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                   echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
                   echo '<p class="mb-0">'.$row_tenant['desc'].'</p>';
