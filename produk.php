@@ -202,7 +202,7 @@ www.4happy-studio.com -->
                   <h3></h3>
                   <p>Klik untuk fullscreen foto</p>
                 </div>
-                <img class="img-fluid" src="'.$row['image'].'">';
+                <img class="img-fluid" src="'.$row['image'].'" onclick="img_box(this)">';
             echo '</a>
             <div class="card-body text-center">';
             echo '<h5 class="card-title"><b>'. $row['name'].'</b></h5>';
@@ -258,6 +258,9 @@ mysqli_close($link);
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+
+  <script src="assets/js/img_box.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
