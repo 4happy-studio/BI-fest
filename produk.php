@@ -131,16 +131,6 @@ www.4happy-studio.com -->
 }
 </style>
 
-<script>
-var autoPlayVideo = document.getElementById("ocScreencapVideo");
-    autoPlayVideo.oncanplaythrough = function() {
-        autoPlayVideo.muted = true;
-        autoPlayVideo.play();
-        autoPlayVideo.pause();
-        autoPlayVideo.play();
-    }
-</script>
-
 </head>
 
 <nav class="navbar navbar-light" style="position: relative; background-color: #445552; z-index: 2; height: 20%;">
@@ -151,17 +141,6 @@ var autoPlayVideo = document.getElementById("ocScreencapVideo");
   </a>
   
 </nav>
-
-<header class="masthead">
-  
-  <div class="">
-   <video playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" muted="muted" loop="loop" >
-    <source src="https://youtu.be/Jwgf3wmiA04" type="video/mp4">    
-  </video> 
-  </div>
-</header>
-
-
 <body>
   
 
@@ -281,6 +260,17 @@ mysqli_close($link);
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+var autoPlayVideo = document.getElementById("ocScreencapVideo");
+    autoPlayVideo.oncanplaythrough = function() {
+        autoPlayVideo.muted = true;
+        autoPlayVideo.play();
+        autoPlayVideo.pause();
+        autoPlayVideo.play();
+    }
+</script>
 
 </body>
 
