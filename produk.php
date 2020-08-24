@@ -171,9 +171,9 @@ www.4happy-studio.com -->
             if(mysqli_num_rows($result_tenant) > 0){
               while($row_tenant = mysqli_fetch_array($result_tenant)){
                   echo '<div class="embed-responsive embed-responsive-16by9"> 
-                  <video playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" loop="loop" class="embed-responsive-item video-fluid">
+                  <iframe playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" loop="loop" class="embed-responsive-item video-fluid">
                   <source src="'.$row_tenant['vid'].'" type="video/mp4">    
-                  </video> 
+                  </iframe> 
                   </div>';
                   echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
                   echo '<p class="mb-0">'.$row_tenant['desc'].'</p>';
