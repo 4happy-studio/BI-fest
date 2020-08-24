@@ -24,10 +24,6 @@
         <label for="cluster">cluster</label>
         <input type="text" name="cluster" id="cluster">
     </p>
-    <p>
-        <label for="vid">Video Produk</label>
-        <input type="file" name="vid" id="vid">
-    </p>
     <input type="submit" value="Submit">
 </form>
 
