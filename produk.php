@@ -47,7 +47,7 @@ www.4happy-studio.com -->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+ 
   <style>
   header {
     position: relative;
@@ -131,9 +131,15 @@ www.4happy-studio.com -->
 }
 </style>
 
-
-
-
+<script>
+var autoPlayVideo = document.getElementById("ocScreencapVideo");
+    autoPlayVideo.oncanplaythrough = function() {
+        autoPlayVideo.muted = true;
+        autoPlayVideo.play();
+        autoPlayVideo.pause();
+        autoPlayVideo.play();
+    }
+</script>
 
 </head>
 
@@ -171,7 +177,10 @@ www.4happy-studio.com -->
             if(mysqli_num_rows($result_tenant) > 0){
               while($row_tenant = mysqli_fetch_array($result_tenant)){
                   echo '<div class="embed-responsive embed-responsive-16by9"> 
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Jwgf3wmiA04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <video id="ocScreencapVideo" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
+                  <source src="'.$row_tenant['vid'].'" type="video/mp4">
+                    Your browser does not support MP4 Format videos or HTML5 Video.
+                  </video>
                   </div>';
                   echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
                   echo '<p class="mb-0">'.$row_tenant['desc'].'</p>';
