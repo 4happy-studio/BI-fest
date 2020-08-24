@@ -212,7 +212,7 @@ www.4happy-studio.com -->
             echo '<p class="card-text">'. $row['desc'].'</p>';
             //echo '<img class="img-fluid" src="'. $row['image'].'">';
             echo '</div>';
-            echo '<a href="'.$row['urlproduk'].'" class="btn btn-lg btn-block btn-warning btn-square align-items-center">Beli Disini</a>';
+            echo '<a href="'.$row['urlproduk'].'" class="btn btn-lg btn-block btn-warning btn-square align-items-center" target="_blank">Beli Disini</a>';
           echo '</div>
           </div>';
         }
