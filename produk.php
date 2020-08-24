@@ -162,7 +162,8 @@ www.4happy-studio.com -->
           if($result_tenant = mysqli_query($link, $sql_tenant)){
             if(mysqli_num_rows($result_tenant) > 0){
               while($row_tenant = mysqli_fetch_array($result_tenant)){
-                  echo '<video id="ocScreencapVideo" autoplay="autoplay" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
+                  echo '<iframe src="'.$row_tenant['vid'].'" frameborder="0" allow="accelerometer" class="embed-responsive-item video-fluid" allow="autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                  <video id="ocScreencapVideo" autoplay="autoplay" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
                   <source src="'.$row_tenant['vid'].'" type="video/mp4">
                     Your browser does not support MP4 Format videos or HTML5 Video.
                   </video>';
@@ -263,7 +264,7 @@ mysqli_close($link);
 
 
   <script>
-var autoPlayVideo = document.getElementById("ocScreencapVideo");
+    var autoPlayVideo = document.getElementById("ocScreencapVideo");
     autoPlayVideo.oncanplaythrough = function() {
         autoPlayVideo.muted = true;
         autoPlayVideo.play();
