@@ -155,7 +155,6 @@ var autoPlayVideo = document.getElementById("ocScreencapVideo");
 <header class="masthead">
   
   <div class="">
-   <img src="assets/img/background.jpg" class="img-fluid banner" alt="Responsive image"> 
    <video playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" muted="muted" loop="loop" >
     <source src="assets/img/bum.mp4" type="video/mp4">    
   </video> 
