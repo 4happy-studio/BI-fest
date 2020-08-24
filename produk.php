@@ -170,7 +170,6 @@ www.4happy-studio.com -->
               </div>';
                   $video = $row_tenant['vid'];
                   $video = str_replace('https://www.youtube.com/embed/', '', $video);
-                  echo $video;
                   //echo '<iframe width="560" height="315" src="'.$row_tenant['vid'].'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                   echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
                   echo '<p class="mb-0">'.$row_tenant['desc'].'</p>';
@@ -280,7 +279,7 @@ var player;
 function onYouTubeIframeAPIReady() {
  player = new YT.Player('player', {
    width: '100%',
-   videoId: '',
+   videoId: '<?php $video ?>',
    playerVars: { 'autoplay': 1, 'playsinline': 1 },
    events: {
      'onReady': onPlayerReady
