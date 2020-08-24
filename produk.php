@@ -156,16 +156,40 @@ www.4happy-studio.com -->
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-
+<!-- 1. The <iframe> (video player) will replace this <div> tag. -->
+<div class="iframe-container">
+  <div id="player"></div>
+</div>
+<
           <script>
-             //select the first iframe that has a src that starts with "//www.youtube"
-    var firstIframe = document.querySelector('iframe[src^="//www.youtube"]');
-    //get the current source
-    var src = firstIframe.src;
-    //update the src with "autoplay=1"
-    var newSrc = src+'?autoplay=1';
-    //change iframe's src
-    firstIframe.src = newSrc;
+          
+           // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    width: '100%',
+    videoId: 'Xc25RykxUrM',
+    playerVars: { 'autoplay': 1, 'playsinline': 1 },
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+   event.target.mute();
+  event.target.playVideo();
+}
+
           </script>
           <?php
           if($result_tenant = mysqli_query($link, $sql_tenant)){
