@@ -157,16 +157,21 @@ www.4happy-studio.com -->
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
 
-          
+          <script>
+             //select the first iframe that has a src that starts with "//www.youtube"
+    var firstIframe = document.querySelector('iframe[src^="//www.youtube"]');
+    //get the current source
+    var src = firstIframe.src;
+    //update the src with "autoplay=1"
+    var newSrc = src+'?autoplay=1';
+    //change iframe's src
+    firstIframe.src = newSrc;
+          </script>
           <?php
           if($result_tenant = mysqli_query($link, $sql_tenant)){
             if(mysqli_num_rows($result_tenant) > 0){
               while($row_tenant = mysqli_fetch_array($result_tenant)){
-                  echo '<video controls autoplay>
-                  <source src="assets\vid\Video Tenant Amarilia.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>';
-                  echo '<iframe width="560" height="315" src="'.$row_tenant['vid'].'?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                  echo '<iframe width="560" height="315" src="'.$row_tenant['vid'].'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                   echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
                   echo '<p class="mb-0">'.$row_tenant['desc'].'</p>';
               }
