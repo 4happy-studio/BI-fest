@@ -279,7 +279,7 @@ var player;
 function onYouTubeIframeAPIReady() {
  player = new YT.Player('player', {
    width: '100%',
-   videoId: '<?php $video ?>',
+   videoId: '<?php echo $video ?>',
    playerVars: { 'autoplay': 1, 'playsinline': 1 },
    events: {
      'onReady': onPlayerReady
