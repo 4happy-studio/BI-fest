@@ -209,9 +209,7 @@ www.4happy-studio.com -->
             echo '<p class="card-text">'. $row['desc'].'</p>';
             //echo '<img class="img-fluid" src="'. $row['image'].'">';
             echo '</div>';
-            echo '<div class="card-footer">
-            <a href="'.$row['urlproduk'].'" class="btn btn-lg btn-block btn-outline-warning btn-square align-items-center">Beli Disini</a>
-          </div>';
+            echo '<a href="'.$row['urlproduk'].'">Beli Disini</a>';
           echo '</div>
           </div>';
         }
