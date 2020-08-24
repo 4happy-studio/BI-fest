@@ -177,10 +177,12 @@ var autoPlayVideo = document.getElementById("ocScreencapVideo");
             if(mysqli_num_rows($result_tenant) > 0){
               while($row_tenant = mysqli_fetch_array($result_tenant)){
                   echo '<div class="embed-responsive embed-responsive-16by9"> 
+
                   <video id="ocScreencapVideo" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" data-aos="fade-up">
                   <source src="'.$row_tenant['vid'].'" type="video/mp4">
                     Your browser does not support MP4 Format videos or HTML5 Video.
                   </video>
+
                   </div>';
                   echo '<h2><b>'.$row_tenant['name'].'</b></h2>';
                   echo '<p class="mb-0">'.$row_tenant['desc'].'</p>';
