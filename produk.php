@@ -171,8 +171,7 @@ www.4happy-studio.com -->
             if(mysqli_num_rows($result_tenant) > 0){
               while($row_tenant = mysqli_fetch_array($result_tenant)){
                   echo '<div class="embed-responsive embed-responsive-16by9"> 
-                  <iframe src="'.$row_tenant['vid'].'" frameborder="0" allow="accelerometer" class="embed-responsive-item video-fluid" autoplay encrypted-media; gyroscope picture-in-picture allowfullscreen></iframe>
-                  <video playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" loop="loop" >
+                  <video playsinline="playsinline" autoplay poster="assets/img/syahfest.jpg" loop="loop" class="embed-responsive-item video-fluid">
                   <source src="'.$row_tenant['vid'].'" type="video/mp4">    
                   </video> 
                   </div>';
