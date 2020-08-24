@@ -159,7 +159,6 @@ www.4happy-studio.com -->
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
 
 
-<
           
           <?php
           if($result_tenant = mysqli_query($link, $sql_tenant)){
