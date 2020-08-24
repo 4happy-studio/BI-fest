@@ -164,8 +164,8 @@ www.4happy-studio.com -->
       <div class="container">
         <div class="row mb-5 align-items-center">
           <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-          <iframe src="https://drive.google.com/file/d/11UH5ifwt0sZ8yoPktDRs-lBWHjP8L-lq/preview" width="640" height="480"></iframe>
 
+          
           <?php
           if($result_tenant = mysqli_query($link, $sql_tenant)){
             if(mysqli_num_rows($result_tenant) > 0){
