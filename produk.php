@@ -197,7 +197,7 @@ www.4happy-studio.com -->
 
             echo '<div class="item 3d col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card">
-              <a class="item-wrap fancybox" onclick="img_box(this)>
+              <a href="#" class="item-wrap fancybox" onclick="img_box(this)>
                 <div class="work-info">
                   <h3></h3>
                   <p>Klik untuk fullscreen foto</p>
