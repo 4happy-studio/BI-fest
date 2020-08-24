@@ -197,12 +197,12 @@ www.4happy-studio.com -->
 
             echo '<div class="item 3d col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card">
-              <a href="#" class="item-wrap fancybox">
+              <a class="item-wrap fancybox" onclick="img_box(this)>
                 <div class="work-info">
                   <h3></h3>
                   <p>Klik untuk fullscreen foto</p>
                 </div>
-                <img class="img-fluid" src="'.$row['image'].'" onclick="img_box(this)">';
+                <img class="img-fluid" src="'.$row['image'].'" ">';
             echo '</a>
             <div class="card-body text-center">';
             echo '<h5 class="card-title"><b>'. $row['name'].'</b></h5>';
