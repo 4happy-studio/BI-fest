@@ -194,30 +194,22 @@ www.4happy-studio.com -->
               if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_array($result)){
-
+          
             echo '<div class="item 3d col-sm-6 col-md-4 col-lg-4 mb-4">
             <div class="card">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="'.$row['image'].'" alt="First slide">
-    </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>';
+              <a href="#" class="item-wrap fancybox" onclick="img_box('.$row['image'].')">
+                <div class="work-info">
+                  <h3></h3>
+                  <p>Klik untuk fullscreen foto</p>
+                </div>
+                <img class="img-fluid" src="'.$row['image'].'" ">';
             echo '</a>
             <div class="card-body text-center">';
             echo '<h5 class="card-title"><b>'. $row['name'].'</b></h5>';
             echo '<p class="card-text">'. $row['desc'].'</p>';
             //echo '<img class="img-fluid" src="'. $row['image'].'">';
             echo '</div>';
-            echo '<a href="'.$row['urlproduk'].'" class="btn btn-lg btn-block btn-warning btn-square align-items-center" target="_blank">Beli Disini</a>';
+            echo '<a href="'.$row['urlproduk'].'" class="btn btn-lg btn-block btn-dark btn-square align-items-center" target="_blank">Beli Disini</a>';
           echo '</div>
           </div>';
         }
