@@ -210,13 +210,7 @@ www.4happy-studio.com -->
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-              <a href="#" class="item-wrap fancybox" onclick="img_box('.$row['image'].')">
-                <div class="work-info">
-                  <h3></h3>
-                  <p>Klik untuk fullscreen foto</p>
-                </div>
-                <img class="img-fluid" src="'.$row['image'].'" ">';
+</div>';
             echo '</a>
             <div class="card-body text-center">';
             echo '<h5 class="card-title"><b>'. $row['name'].'</b></h5>';
