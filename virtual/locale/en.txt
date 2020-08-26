@@ -1,0 +1,87 @@
+#: locale=en
+
+## Tour
+
+### Title
+tour.name = KPw BI Kepri Virtual Expo 2020
+
+## Skin
+
+### Dropdown
+DropDown_01F5FD84_2140_6800_41BD_6765E1F3B0AD.prompt = Lantai
+DropDown_045BF1FC_2140_7807_4175_A46D4956F65D.prompt = Lantai
+DropDown_08667C0C_2140_2800_4198_BD1C67E1A359.prompt = Lantai
+DropDown_09AD9C44_2140_E800_41AE_416DAA487C18.prompt = Lantai
+DropDown_0FFE936C_2140_7807_41BD_C9E8327E165A.prompt = Lantai
+DropDown_32A5639D_2341_0120_41A5_41270CE9651C.prompt = Lantai
+
+### Label
+Label_01F0BDA0_2140_6800_4189_938020778524.text = Lantai 1
+Label_01F0FDA0_2140_6800_41BF_2458ABE7293E.text = Lantai 2
+Label_07A73210_2140_781F_41A2_B319C16888CA.text = Lantai 1
+Label_07A76210_2140_781F_41BE_34F257203E5F.text = Lantai 2
+Label_09A80C56_2140_E800_41BD_F572F129195F.text = Lantai 2
+Label_09A83C57_2140_E800_41A2_30086F99B517.text = Lantai 1
+Label_0B962C20_2140_2800_41B1_A13D521E9794.text = Lantai 2
+Label_0B97EC20_2140_2800_4199_3AA80409B712.text = Lantai 1
+Label_0FD02382_2140_7803_41B4_0F70D20E6194.text = Lantai 2
+Label_0FD17383_2140_7801_4171_EAA7A5D941EE.text = Lantai 1
+Label_329603BB_2341_0160_4199_ECB09C830686.text = Lantai 2
+Label_329643BC_2341_0160_41B5_86DA004613A1.text = Lantai 1
+
+## Media
+
+### Title
+panorama_1058EFB0_1ADB_C088_419E_6C49215B86A6.label = LT1_Entrance
+panorama_1184E731_1AD8_C189_41B5_67EF127D1F3B.label = LT1_Spot 04
+panorama_118A5F0F_1ADB_4199_4180_7086B2442C4B.label = LT1_Main
+panorama_1190FC37_1AD9_4788_41AE_2B308A891A89.label = LT1_Spot 06
+panorama_1195611A_1ADB_41BB_41B6_C8440FE0E909.label = LT1_Spot 01
+panorama_119572DD_1AD8_C0B8_41A7_FC9BD207E88D.label = LT1_Spot 02
+panorama_1195A56B_1AD8_C199_41B3_B74CC1A3273D.label = LT1_Spot 03
+panorama_119A69ED_1AD8_C098_4180_EF2719064184.label = LT1_Spot 05
+panorama_11A0FE49_1ADF_C399_41A0_FFED57D73A56.label = LT2_Spot 04
+panorama_11A10020_1ADF_5F87_4183_166C0B8AD0D0.label = LT2_Spot 05
+panorama_11A131D5_1ADF_4089_41A4_284ED4AA7743.label = LT2_Spot 06
+panorama_11ABB897_1ADF_C088_4176_4736B9C11588.label = LT2_Spot 02
+panorama_11B55B9A_1ADF_C0BB_41A2_7263C50B5208.label = LT2_Spot 03
+panorama_16CAE681_1ADF_C089_41B7_73DC043650E7.label = LT2_Spot 01
+photo_1551FE4B_1B30_41CA_41AB_7109442A3385.label = IMG_0431
+video_12E22A7A_1D15_FF70_41B1_A346905113F2.label = Opening Virtual Bazaar
+video_155542AF_1AE1_A828_41AC_78CB6AEB6957.label = Bumper Shayfest
+video_15ABC4E2_1B30_42FA_4192_20A27149E3E2.label = backdrop 2,5x2
+
+## Action
+
+### URL
+PopupWebFrameBehaviour_2F02BD90_21B5_4E00_4193_DA233BB7C0BA.url = https://bikepriexpo.com/produk.php?id_tenant=22
+PopupWebFrameBehaviour_303BD41F_20C0_5801_41A2_D885912E7FD1.url = https://bikepriexpo.com/produk.php?id_tenant=7
+PopupWebFrameBehaviour_308483E3_21BD_5A07_41AF_15919AB5AAE5.url = https://bikepriexpo.com/produk.php?id_tenant=19
+PopupWebFrameBehaviour_3089BA3A_2140_6803_41BC_60ACEA11E5E4.url = https://bikepriexpo.com/produk.php?id_tenant=3
+PopupWebFrameBehaviour_30CA5249_2140_D801_4186_2D461399149A.url = https://bikepriexpo.com/produk.php?id_tenant=20
+PopupWebFrameBehaviour_30D73002_2140_5800_41C0_10AC846C4298.url = https://bikepriexpo.com/produk.php?id_tenant=1
+PopupWebFrameBehaviour_3161EB1B_21B5_4A07_4187_BD24ADAB77A7.url = https://bikepriexpo.com/produk.php?id_tenant=15
+PopupWebFrameBehaviour_31AD74CC_20C1_D800_41BD_8AA21212633E.url = https://bikepriexpo.com/produk.php?id_tenant=0
+PopupWebFrameBehaviour_3208E851_2140_2801_41C0_797E812ADF4C.url = https://bikepriexpo.com/produk.php?id_tenant=24
+PopupWebFrameBehaviour_322BF559_2141_F801_41BB_7A98D077933F.url = https://bikepriexpo.com/produk.php?id_tenant=14
+PopupWebFrameBehaviour_323715D0_2141_D800_419E_0AA15BFF4A36.url = https://bikepriexpo.com/produk.php?id_tenant=6
+PopupWebFrameBehaviour_3244F386_2140_7803_4198_F153AB11B3CB.url = https://bikepriexpo.com/produk.php?id_tenant=9
+PopupWebFrameBehaviour_326553D1_2140_7801_41BB_7A764E299683.url = https://bikepriexpo.com/produk.php?id_tenant=27
+PopupWebFrameBehaviour_32657F93_2140_2801_41BD_0EB936F7A683.url = https://bikepriexpo.com/produk.php?id_tenant=4
+PopupWebFrameBehaviour_326CB633_2140_7801_41B2_D6ACE798E91B.url = https://bikepriexpo.com/produk.php?id_tenant=12
+PopupWebFrameBehaviour_32759724_2140_5807_4170_AFA767DDAE0C.url = https://bikepriexpo.com/produk.php?id_tenant=25
+PopupWebFrameBehaviour_32E117C5_2140_3801_41C0_7154717F6335.url = https://bikepriexpo.com/produk.php?id_tenant=16
+PopupWebFrameBehaviour_32EF75EB_2140_3800_41A7_74DB6B13878D.url = https://bikepriexpo.com/produk.php?id_tenant=17
+PopupWebFrameBehaviour_331437B3_2140_D801_41BE_377214BC5E45.url = https://bikepriexpo.com/produk.php?id_tenant=21
+PopupWebFrameBehaviour_335BE927_2140_2800_41B5_0B4DFDFFBE69.url = https://bikepriexpo.com/produk.php?id_tenant=5
+PopupWebFrameBehaviour_3371D1B0_21BA_D600_419D_553C260B0028.url = https://bikepriexpo.com/produk.php?id_tenant=19
+PopupWebFrameBehaviour_33BC32C3_2140_5800_41AB_B9D76E5999C1.url = https://bikepriexpo.com/produk.php?id_tenant=26
+PopupWebFrameBehaviour_33F1C7DD_2143_D800_41B3_2C3DC0C9DA18.url = https://bikepriexpo.com/produk.php?id_tenant=22
+PopupWebFrameBehaviour_33F8B585_2140_D801_41B8_3B664DE91377.url = https://bikepriexpo.com/produk.php?id_tenant=8
+PopupWebFrameBehaviour_3445ECBD_2140_2800_41B5_E941AE9F909B.url = https://bikepriexpo.com/produk.php?id_tenant=23
+PopupWebFrameBehaviour_34A48079_2140_3801_41A3_0872E0CCEBED.url = https://bikepriexpo.com/produk.php?id_tenant=15
+PopupWebFrameBehaviour_35241652_2140_5803_41BC_4A1D5EF0DE2A.url = https://bikepriexpo.com/produk.php?id_tenant=18
+PopupWebFrameBehaviour_3543ACA0_2141_E800_41B3_DB74636D7A4E.url = https://bikepriexpo.com/produk.php?id_tenant=2
+PopupWebFrameBehaviour_357133BC_2140_5800_41B8_AAFFBF73CE81.url = https://bikepriexpo.com/produk.php?id_tenant=11
+PopupWebFrameBehaviour_35FA0D30_2140_2800_41A6_E1FCADB9BD98.url = https://bikepriexpo.com/produk.php?id_tenant=13
+PopupWebFrameBehaviour_3785D4F2_2140_F800_41BB_215820473DE9.url = https://bikepriexpo.com/produk.php?id_tenant=10
