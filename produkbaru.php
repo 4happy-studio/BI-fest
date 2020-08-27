@@ -187,7 +187,7 @@ www.4happy-studio.com -->
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
           
           
-        
+      
               
               
               <?php
@@ -195,14 +195,26 @@ www.4happy-studio.com -->
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_array($result)){
           
-            echo '<div class="item '; if($row['active'] == 1){ echo 'active'; } echo '">
-            <img src="'.$row['image'].'" />
-            <div class="carousel-caption">
-              <h1 class="carousel-caption-header">'.$row['name'].'</h1>
-              <p class="carousel-caption-text hidden-sm hidden-xs">
-                '.$row['desc'].'
-              </p>
+            echo '<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="'.$row['image'].'" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="'.$row['image'].'" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="'.$row['image'].'" alt="Third slide">
+              </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>';
         }
         // Free result set
