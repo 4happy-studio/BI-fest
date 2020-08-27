@@ -229,6 +229,52 @@ mysqli_close($link);
 
 ?>
           
+          <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>  
+    </ul>
+
+    <!-- The slides -->               
+    <div class="carousel-inner">
+
+    <?php 
+    $hasAddedActive = false;
+    while ($row = mysql_fetch_array($result)) {      
+    $id =($row['id']);                      
+    $image =($row['image']);
+?>
+
+<?php 
+    $divClass = 'carousel-item bnw-filter';
+    $divClass .= $hasAddedActive ? '' : ' active';
+    $hasAddedActive = true;
+    echo('<div class="'.$divClass.'">'); 
+?>
+    <?php 
+        echo '<a href="artykul.php?id='.$id.'">'; 
+        echo '<img src="uplimg/'.$image.'" class="img-fluid">';
+        echo '</a>'; 
+    ?>
+<?php echo('</div>'); ?>    
+
+<? } ?>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+
+
     </section><!-- End  Works Section -->
   </main><!-- End #main -->
 
