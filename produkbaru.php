@@ -184,12 +184,7 @@ www.4happy-studio.com -->
             
           </div>
         </div>
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          
-          
-      
-              
-              
+        
               <?php
               if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
@@ -233,13 +228,7 @@ www.4happy-studio.com -->
 mysqli_close($link);
 
 ?>
-            
-
-
           
-         
-          
-        </div>
     </section><!-- End  Works Section -->
   </main><!-- End #main -->
 
