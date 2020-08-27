@@ -196,7 +196,7 @@ www.4happy-studio.com -->
         while($row = mysqli_fetch_array($result)){
           
             echo '<div class="item '; if($row['active'] == 1){ echo 'active'; } echo '">
-            <img src="img/'.$row['image'].'" />
+            <img src="'.$row['image'].'" />
             <div class="carousel-caption">
               <h1 class="carousel-caption-header">'.$row['name'].'</h1>
               <p class="carousel-caption-text hidden-sm hidden-xs">
