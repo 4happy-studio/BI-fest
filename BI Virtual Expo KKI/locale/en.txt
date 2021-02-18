@@ -1,0 +1,35 @@
+#: locale=en
+
+## Tour
+
+### Title
+tour.name = KPw BI Kepri Virtual Expo 2020
+
+## Media
+
+### Title
+panorama_2050F5F6_3095_3429_41B2_DC02D978D5C8.label = LT3_Entrance
+panorama_23ACA36F_3108_2479_41C1_E14F253A95E7.label = LT3_Spot 01
+panorama_3FD05C76_3093_3429_41C8_3AE392BC34FB.label = LT3_Main
+panorama_3FE48CBB_3093_D418_41C1_9B829F8407EF.label = LT3_Spot 04
+panorama_3FE4C098_3093_EC18_4172_845A1131EA81.label = LT3_Spot 05
+panorama_3FE4D3A9_3093_6C38_41C1_09CE8615952C.label = LT3_Spot 02
+panorama_3FE4F7E7_3093_3437_41C2_C5C0197423F7.label = LT3_Spot 03
+panorama_3FE58494_3093_34E9_41B2_5D8DCFE5E32D.label = LT3_Spot 06
+video_209EB016_3284_FCAD_41C2_202410E18F34.label = KKI Bumper Logo
+video_21E7D944_311B_E5AF_41BF_8C24CD18FCED.label = backdrop 2,5x2
+video_22ABAAE4_3285_8D6D_41C8_BF68BDE7FDCA.label = KKI Bumper Logo
+
+## Action
+
+### URL
+PopupWebFrameBehaviour_2074F798_3138_2CA6_4188_CF5CFE7DF802.url = https://bikepriexpo.com/tenant/maeteh.html
+PopupWebFrameBehaviour_21D33364_3108_246F_417A_03EE11FACA34.url = https://bikepriexpo.com/tenant/naluna.html
+PopupWebFrameBehaviour_21FD4531_3138_2DE9_41C6_B294900AE344.url = https://bikepriexpo.com/tenant/linasukijo.html
+PopupWebFrameBehaviour_23646AF1_3138_2466_4198_48C6F2D51AE0.url = https://bikepriexpo.com/tenant/littlenasywa.html
+PopupWebFrameBehaviour_3C01BBBE_328C_83DE_41A2_2185F1A5CC64.url = https://bikepriexpo.com/tenant/isnapuring.html
+PopupWebFrameBehaviour_3C70B851_3284_8CA2_41B7_603AA38D0688.url = https://bikepriexpo.com/tenant/rumahtenun.html
+PopupWebFrameBehaviour_3D655AB2_3283_8DE6_41C5_8B39568C6A96.url = https://bikepriexpo.com/tenant/rumahtenun.html
+PopupWebFrameBehaviour_3F2E9A66_3283_8D6E_41C3_0A98CF697939.url = https://bikepriexpo.com/tenant/isnapuring.html
+PopupWebFrameBehaviour_3F34A3F9_328C_8362_41B4_257ED9E21B73.url = https://bikepriexpo.com/tenant/pranaliving.html
+PopupWebFrameBehaviour_3FDE0EEF_328F_857E_417C_4B941A464FA4.url = https://bikepriexpo.com/tenant/tottocraft.html
